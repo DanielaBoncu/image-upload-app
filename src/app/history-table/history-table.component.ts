@@ -7,9 +7,9 @@ export interface ImageRecogn {
   download: string;
 }
 const ELEMENT_DATA: ImageRecogn[] = [
-  {name: 'Dog', size: '400x550', result:'dog', download:''},
-  {name: 'Cat', size: '400x550', result:'cat', download:''},
-  {name: 'Cat1', size: '400x550', result:'cat', download:''},
+  {name: 'Dog', size: '400x550', result:'dog', download:'https://www.google.com/search?q=dog&client'},
+  {name: 'Cat', size: '400x550', result:'dog', download:''},
+  {name: 'Cat1', size: '400x550', result:'dog', download:''},
   {name: 'Dog2', size:'400x550', result:'dog', download:''},
 ];
 
@@ -20,7 +20,7 @@ const ELEMENT_DATA: ImageRecogn[] = [
 })
 export class HistoryTableComponent implements OnInit {
 
-  displayedColumns: string[] = ['Image name', 'Size', 'Recognition result', 'Download link'];
+  displayedColumns: string[] = ['name', 'size', 'result', 'download'];
   dataSource = ELEMENT_DATA;
   constructor() { }
 

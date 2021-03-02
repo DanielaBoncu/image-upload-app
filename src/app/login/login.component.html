@@ -5,23 +5,21 @@
         <mat-grid-tile [colspan]=1 [rowspan]=3>
         </mat-grid-tile>
         <mat-grid-tile [colspan]=2 [rowspan]=3 class="form-grid">
-                <form class="form-login">
+            <img src="../../assets/avatar.png">
+            <form class="form-login">
                     <h1 style="text-align: center;">Login</h1>
-                    <p>
-                        <mat-form-field appearance="outline">
+                        <mat-form-field appearance="fill">
                             <mat-label><mat-icon matPreffix>email</mat-icon>  Email</mat-label>
                             <input type="email" matInput required>
                         </mat-form-field>
-                    </p>
-                    <p>
-                        <mat-form-field appearance="outline">
+                
+                        <mat-form-field appearance="fill">
                             <mat-label><mat-icon matPreffix>lock</mat-icon>  Password</mat-label>
                             <input type=password matInput required>
                         </mat-form-field>
-                    </p>
-                    <button mat-flat-button class="login" routerLink="/history">Login</button>
+                    <button mat-flat-button color="primary" class="login" routerLink="/history">Login</button>
                     <button mat-button class="forgot">Forgot Username/Password?</button>
-                </form> 
+            </form> 
         </mat-grid-tile>
         <mat-grid-tile [colspan]=1 [rowspan]=3>
         </mat-grid-tile>

@@ -4,20 +4,20 @@
     width:100%;
     height:100%;
     .form-grid{
-        background-color: white;
+        background-color: #b4b6b8;
         border-radius: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        img{
+            margin-right: 100px;
+        }
         .form-login{
-            padding-left: 500px;
             width: 25%;
-            margin: auto;
             display: flex;
             flex-direction: column;
             .login{
-                background-color: #008b00;
+               
                 border-radius: 1rem;
-            }
-            mat-form-field{
-                background-color: #ECEFF1;
             }
         }
     }
