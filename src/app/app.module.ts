@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
+import { ImageCardComponent } from './image-card/image-card.component';
+import { HeaderComponent } from './header/header.component';
 
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatTableModule } from '@angular/material/table';
@@ -13,17 +15,16 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input'; 
 import { MatButtonModule } from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { ImageTableListComponent } from './image-table-list/image-table-list.component';
-import { ImageCardComponent } from './image-card/image-card.component';
-import { HeaderComponent } from './header/header.component'; 
+import {MatCardModule} from '@angular/material/card';
+import { HistoryTableComponent } from './history-table/history-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ImageTableListComponent,
     ImageCardComponent,
-    HeaderComponent
+    HeaderComponent,
+    HistoryTableComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,8 @@ import { HeaderComponent } from './header/header.component';
     MatIconModule,
     MatSelectModule,
     MatInputModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,36 +1,31 @@
 <div class="content">
     <mat-grid-list cols="4" rowHeight="20%">
         <mat-grid-tile [colspan]=4 [rowspan]=1>
-            <header>just trying</header>
         </mat-grid-tile>
         <mat-grid-tile [colspan]=1 [rowspan]=3>
-
         </mat-grid-tile>
         <mat-grid-tile [colspan]=2 [rowspan]=3 class="form-grid">
                 <form class="form-login">
-                    <mat-form-field appearance="outline">
-                        <mat-label><mat-icon matPreffix>email</mat-icon>  Email</mat-label>
-                        <input type="email" matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                        <mat-label><mat-icon matPreffix>lock</mat-icon>  Password</mat-label>
-                        <input type=password matInput>
-                    </mat-form-field>
+                    <h1 style="text-align: center;">Login</h1>
+                    <p>
+                        <mat-form-field appearance="outline">
+                            <mat-label><mat-icon matPreffix>email</mat-icon>  Email</mat-label>
+                            <input type="email" matInput required>
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="outline">
+                            <mat-label><mat-icon matPreffix>lock</mat-icon>  Password</mat-label>
+                            <input type=password matInput required>
+                        </mat-form-field>
+                    </p>
+                    <button mat-flat-button class="login" routerLink="/history">Login</button>
+                    <button mat-button class="forgot">Forgot Username/Password?</button>
                 </form> 
         </mat-grid-tile>
         <mat-grid-tile [colspan]=1 [rowspan]=3>
         </mat-grid-tile>
         <mat-grid-tile [colspan]=1 [rowspan]=1>
-
         </mat-grid-tile>
       </mat-grid-list>
-      
-    <!-- <form class="form-login">
-    <mat-form-field appearance="fill">
-        <mat-label>Fill form field</mat-label>
-        <input matInput placeholder="Placeholder">
-        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        <mat-hint>Hint</mat-hint>
-    </mat-form-field>
-    </form>  -->
 </div>

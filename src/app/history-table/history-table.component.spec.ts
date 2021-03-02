@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImageTableListComponent } from './image-table-list.component';
+import { HistoryTableComponent } from './history-table.component';
 
-describe('ImageTableListComponent', () => {
-  let component: ImageTableListComponent;
-  let fixture: ComponentFixture<ImageTableListComponent>;
+describe('HistoryTableComponent', () => {
+  let component: HistoryTableComponent;
+  let fixture: ComponentFixture<HistoryTableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImageTableListComponent ]
+      declarations: [ HistoryTableComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ImageTableListComponent);
+    fixture = TestBed.createComponent(HistoryTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

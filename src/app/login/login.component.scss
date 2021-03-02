@@ -1,5 +1,5 @@
 .content{
-    background-image: url('../../assets/gradientbg.svg');
+    background-image: linear-gradient(to bottom right, red, purple);
     position:fixed;
     width:100%;
     height:100%;
@@ -7,13 +7,17 @@
         background-color: white;
         border-radius: 0.5rem;
         .form-login{
+            padding-left: 500px;
             width: 25%;
             margin: auto;
             display: flex;
             flex-direction: column;
+            .login{
+                background-color: #008b00;
+                border-radius: 1rem;
+            }
             mat-form-field{
-                background-color: rgb(211, 216, 218);
-                
+                background-color: #ECEFF1;
             }
         }
     }
