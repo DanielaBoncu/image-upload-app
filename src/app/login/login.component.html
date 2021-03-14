@@ -6,18 +6,19 @@
         </mat-grid-tile>
         <mat-grid-tile [colspan]=2 [rowspan]=3 class="form-grid">
             <img src="../../assets/avatar.png">
-            <form class="form-login">
+            <form class="form-login" [formGroup]="loginForm">
                     <h1 style="text-align: center;">Login</h1>
-                        <mat-form-field appearance="fill">
-                            <mat-label><mat-icon matPreffix>email</mat-icon>  Email</mat-label>
-                            <input type="email" matInput required>
-                        </mat-form-field>
-                
-                        <mat-form-field appearance="fill">
-                            <mat-label><mat-icon matPreffix>lock</mat-icon>  Password</mat-label>
-                            <input type=password matInput required>
-                        </mat-form-field>
-                    <button mat-flat-button color="primary" class="login" routerLink="/history">Login</button>
+                       
+                            <mat-form-field appearance="fill">
+                                <mat-label><mat-icon matPreffix>email</mat-icon>  Email</mat-label>
+                                <input type="email" matInput formControlName="email">
+                            </mat-form-field>
+                    
+                            <mat-form-field appearance="fill">
+                                <mat-label><mat-icon matPreffix>lock</mat-icon>  Password</mat-label>
+                                <input type="password" matInput formControlName="password">
+                            </mat-form-field>
+                    <button mat-flat-button color="primary" class="login" routerLink="/history" [disabled]="!loginForm.valid" >Login</button>
                     <button mat-button class="forgot">Forgot Username/Password?</button>
             </form> 
         </mat-grid-tile>
